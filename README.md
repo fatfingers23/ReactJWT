@@ -6,4 +6,5 @@
 
 
 1. Change `appsettings.Development.json.save` to `appsettings.Development.json.save`. Save is an example config and appsettings.Development is on .gitignore so each developer can have their own appsettings for development
-2. Set your Database connection string in appsettings.Development.json under `DefaultConnection`
+2. Set your Database connection string in appsettings.Development.json under `DefaultConnection`. This can be an empty Database.
+3. run `dotnet ef database update` in root of project to add initial schema to the database.
